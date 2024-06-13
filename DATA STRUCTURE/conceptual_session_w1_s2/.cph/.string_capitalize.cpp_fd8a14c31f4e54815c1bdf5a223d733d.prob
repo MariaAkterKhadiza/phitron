@@ -1,0 +1,1 @@
+{"name":"Local: string_capitalize","url":"d:\\DATA STRUCTURE\\conceptual_session_w1_s2\\string_capitalize.cpp","tests":[{"id":1718212611136,"input":"3\nhello\nworld\nexample\n","output":"Hello\nWorld\nExample\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DATA STRUCTURE\\conceptual_session_w1_s2\\string_capitalize.cpp","group":"local","local":true}
