@@ -34,9 +34,9 @@ int main()
     }
 
     if(is_duplicate)
-        cout << "true";
+        cout << "YES";
     else
-        cout << "false";
+        cout << "NO";
 }
 
 
