@@ -10,21 +10,20 @@
  */
 class Solution {
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        if(head==NULL) return head;
-       ListNode* tmp = head;
-       while(tmp->next !=NULL) 
+void reverse(ListNode* &head,ListNode* cur)
+{   if(cur->next == NULL)
        {
-          if(tmp->val == tmp->next->val)
-          {
-            tmp->next  = tmp->next->next;
-          }
-          if(tmp->next == NULL)break;
-          else if(tmp->val != tmp->next->val)
-          {
-            tmp=tmp->next;
-          }
+        head=cur;
+        return;
        }
-       return head;
+    reverse(head,cur->next);
+    cur->next->next = cur;
+    cur->next = NULL;
+}
+    ListNode* reverseList(ListNode* head) {
+        if(head==NULL) return head;
+        reverse(head,head);
+        return head;
     }
 };
+
