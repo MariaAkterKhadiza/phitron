@@ -4,7 +4,7 @@ int main()
 {
       list<int> myList = {10,20,30,40,50};
       
-    //   myList.push_back(100);
+      myList.push_back(100);
     //   myList.push_front(300);
     //  myList.pop_back();
     //  myList.pop_front();
